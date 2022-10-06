@@ -3,28 +3,28 @@ A standard for making color palettes and templates. An extension of [base16](htt
 
 # How To Make a Banner Palette:
 You first need your base16 palette colors. They will be referred to as
-``baseX`` where ``X`` is the hexadecimal index of the color. These are all you
+``base0X`` where ``X`` is the hexadecimal index of the color. These are all you
 will need. Eight shades and eight accents. The base16 [styling specifications](https://github.com/chriskempson/base16/blob/main/styling.md)
 should serve as good guidelines, although the colors may not be used for the
 purposes after the next steps. Additionally, the following requirements are
 added:
-- ``base5``, ``base4``, and ``base3`` should be readable against ``base0`` and
+- ``base05``, ``base04``, and ``base03`` should be readable against ``base00`` and
 vice-versa.
-- ``base5`` should be readable against ``base1`` and vice-versa.
-- ``base6`` should be readable against ``base7`` and vice-versa.
+- ``base05`` should be readable against ``base01`` and vice-versa.
+- ``base06`` should be readable against ``base07`` and vice-versa.
 
-You will then specify preferred foreground colors for ``base8`` through
-``baseF``. Referred to by the prefix ``pfg``. These are colors that are
+You will then specify preferred foreground colors for ``base08`` through
+``base0F``. Referred to by the prefix ``pfg``. These are colors that are
 readable when written in text over the original colors. For example, if
-``base8`` is ``f6c177``, and ``base0`` is ``191724``, then you might make
-``pfg8`` equal to ``base0``, because dark purple (``base0``) is readable on
-yellow (``base8``).
+``base08`` is ``f6c177``, and ``base00`` is ``191724``, then you might make
+``pfg8`` equal to ``base00``, because dark purple (``base00``) is readable on
+yellow (``base08``).
 
 You will then specify the following special colors:
-- ``highlight``: primary highlight color. Specified by base16 index.
-- ``hialt0``: secondary highlight color. Specified by base16 index.
-- ``hialt1``: another secondary highlight color. Specified by base16 index.
-- ``hialt2``: *another* secondary highlight color. Specified by base16 index.
+- ``highlight``: primary highlight color. 
+- ``hialt0``: secondary highlight color. 
+- ``hialt1``: another secondary highlight color. 
+- ``hialt2``: *another* secondary highlight color. 
 - ``urgent``: usually red.
 - ``warn``: usually yellow.
 - ``confirm``: usually green.
