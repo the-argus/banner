@@ -8,10 +8,11 @@ will need. Eight shades and eight accents. The base16 [styling specifications](h
 should serve as good guidelines, although the colors may not be used for the
 purposes after the next steps. Additionally, the following requirements are
 added:
-- ``base05``, ``base04``, and ``base03`` should be readable against ``base00`` and
+- ``base03-base05`` should be readable against ``base00`` and
 vice-versa.
 - ``base05`` should be readable against ``base01`` and vice-versa.
-- ``base06`` should be readable against ``base07`` and vice-versa.
+- ``base06`` should be readable against ``base02`` and vice-versa.
+- ``base07`` should be readable against ``base03`` and vice-versa.
 
 You will then specify preferred foreground colors for ``base08`` through
 ``base0F``. Referred to by the prefix ``pfg``. These are colors that are
