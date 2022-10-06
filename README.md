@@ -1,13 +1,18 @@
 # Banner
-A standard for making color palettes and templates. An extension of [base16](https://github.com/chriskempson/base16). Primarily for use in GUI programs where the text-related style specifications of base16 don't cut it.
 
-# How To Make a Banner Palette:
+A standard for making color palettes and templates. An extension of
+[base16](https://github.com/chriskempson/base16). Primarily for use in GUI
+programs where the text-related style specifications of base16 don't cut it.
+
+## How To Make a Banner Palette
+
 You first need your base16 palette colors. They will be referred to as
 ``base0X`` where ``X`` is the hexadecimal index of the color. These are all you
 will need. Eight shades and eight accents. The base16 [styling specifications](https://github.com/chriskempson/base16/blob/main/styling.md)
 should serve as good guidelines, although the colors may not be used for the
 purposes after the next steps. Additionally, the following requirements are
 added:
+
 - ``base03-base05`` should be readable against ``base00`` and
 vice-versa.
 - ``base05`` should be readable against ``base01`` and vice-versa.
@@ -22,10 +27,11 @@ readable when written in text over the original colors. For example, if
 yellow (``base08``).
 
 You will then specify the following special colors:
-- ``highlight``: primary highlight color. 
-- ``hialt0``: secondary highlight color. 
-- ``hialt1``: another secondary highlight color. 
-- ``hialt2``: *another* secondary highlight color. 
+
+- ``highlight``: primary highlight color.
+- ``hialt0``: secondary highlight color.
+- ``hialt1``: another secondary highlight color.
+- ``hialt2``: *another* secondary highlight color.
 - ``urgent``: usually red.
 - ``warn``: usually yellow.
 - ``confirm``: usually green.
@@ -40,7 +46,8 @@ not functionally different.
 
 See [example.yaml](example.yaml) for the banner palette of rosepine.
 
-# Motivations
+## Motivations
+
 Base16 tends to reliably produce decent looking programs, given a good palette.
 However, if you are making your own palette, it can be a nightmare: you have to
 change certain entries in the palette so that just one program using the
